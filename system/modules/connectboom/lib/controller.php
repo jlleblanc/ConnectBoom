@@ -19,12 +19,15 @@ class Controller
 		{
 			$model = 'system/modules/connectboom/models/' . $TMPL->fetch_param('view') . '.php';
 
-			if (is_file($model)) {
+			if (is_file($model))
+			{
 				include $model;
 				$model_class = 'Model_' . $TMPL->fetch_param('view');
 				$model = new $model_class();
 				$data = $model->getData();
-			} else {
+			}
+			else
+			{
 				$data = array();
 			}
 
