@@ -1,0 +1,4 @@
+system/config.php
+system/config_bak.php
+system/cache/db_cache
+system/cache/magpie_cache

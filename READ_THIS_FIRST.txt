@@ -1,0 +1,13 @@
+Welcome to ExpressionEngine!
+
+The documentation and installation instructions can be found online by visiting this page:
+
+http://expressionengine.com/docs/
+
+If you prefer to have your own local version of the documentation you can download it here:
+
+https://secure.expressionengine.com/download.php
+
+If you have questions or problems, please visit the EllisLab Support page at  http://expressionengine.com/support/
+
+Enjoy...
