@@ -12,7 +12,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 		<name><?php echo $row['address'] ?></name>
 		<description><?php echo $row['description'] ?></description>
 		<Point>
-			<coordinates><?php echo $row['lat'] . ',' . $row['lng'] ?></coordinates>
+			<coordinates><?php echo $row['lng'] . ',' . $row['lat'] ?></coordinates>
 		</Point>
 	</Placemark>		
 <?php endforeach ?>
