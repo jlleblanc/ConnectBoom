@@ -8,7 +8,7 @@ include 'system/modules/connectboom/lib/model.php';
 
 class Model_map extends Model
 {
-	public function getData()
+	function getData()
 	{
 		return array();
 	}

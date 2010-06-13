@@ -4,16 +4,20 @@ if ( ! defined('EXT'))
 	exit('Invalid file request');
 }
 
-abstract class Model
+// abstract class
+class Model
 {
-	protected $db;
+	var $db;
 
-	function __construct()
+	function Model()
 	{
 		global $DB;
 
 		$this->db = $DB;
 	}
 
-	abstract public function getData();
+	// Abstract method
+	function getData() {
+		
+	}
 }
