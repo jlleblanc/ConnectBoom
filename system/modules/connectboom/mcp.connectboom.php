@@ -10,7 +10,7 @@ class Connectboom_CP
 {
 	var $version = '1.0';
 
-	public function Connectboom_CP($switch = true)
+	function Connectboom_CP($switch = true)
 	{
 		global $IN;
 
@@ -26,17 +26,17 @@ class Connectboom_CP
 		}
 	}
 
-	public function view_connectboom()
+	function view_connectboom()
 	{
 		
 	}
 
-	public function connectboom_home()
+	function connectboom_home()
 	{
 		
 	}
 
-	public function connectboom_module_install()
+	function connectboom_module_install()
 	{
 		global $DB;
 
@@ -51,7 +51,7 @@ class Connectboom_CP
 		return true;
 	}
 
-	public function connectboom_module_deinstall()
+	function connectboom_module_deinstall()
 	{
 		global $DB;
 
