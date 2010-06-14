@@ -7,6 +7,7 @@ if ( ! defined('EXT'))
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
 <?php foreach ($data as $row): ?>
 	<Placemark>
 		<name><?php echo $row['address'] ?></name>
@@ -16,4 +17,5 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 		</Point>
 	</Placemark>		
 <?php endforeach ?>
+</Document>
 </kml>
