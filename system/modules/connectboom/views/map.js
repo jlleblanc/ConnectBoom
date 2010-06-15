@@ -23,12 +23,21 @@ $(document).ready(function() {
 	} else {
 		var myLatlng = new google.maps.LatLng(connectboom_pin.lat, connectboom_pin.lng);
 		var myOptions = {
-			zoom: 9,
+			zoom: 14,
 			center: myLatlng,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 
 		var map = makeGoogleMap(myOptions, '');
+
+		var venueLocation = new google.maps.LatLng(connectboom_pin.lat, connectboom_pin.lng);
+
+		var marker = new google.maps.Marker({
+			position: venueLocation,
+			title: connectboom_pin.address
+		});
+
+		marker.setMap(map);
 	};
 
 });
