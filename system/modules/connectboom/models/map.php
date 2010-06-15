@@ -18,11 +18,10 @@ class Model_map extends Model
 		if ($lat && $lng) {
 			$query = "SELECT field_id_22 AS lat, field_id_23 AS lng, field_id_7 AS address, field_id_4 AS description "
 					."FROM exp_weblog_data "
-					."WHERE field_id_22 != '{$lat}' AND field_id_23 != '{$lng}'";
+					."WHERE field_id_22 = '{$lat}' AND field_id_23 = '{$lng}'";
 
 			$results = $this->db->query($query);
-
-			return $results->result;
+			return $results->result[0];
 		}
 
 		return array();
