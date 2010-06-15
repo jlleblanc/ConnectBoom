@@ -11,7 +11,7 @@ $(document).ready(function() {
 		return map;
 	}
 
-	if (connectboom_pin.lat == '') {
+	if (connectboom_pin == undefined) {
 		var myLatlng = new google.maps.LatLng(38.89, -77.04);
 		var myOptions = {
 			zoom: 12,
@@ -23,7 +23,7 @@ $(document).ready(function() {
 	} else {
 		var myLatlng = new google.maps.LatLng(connectboom_pin.lat, connectboom_pin.lng);
 		var myOptions = {
-			zoom: 14,
+			zoom: 16,
 			center: myLatlng,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
